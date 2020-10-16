@@ -291,18 +291,75 @@ header{
 }
 
 .about p span{
+    color: #515151;
     cursor: pointer;
     font-weight: 900;
     letter-spacing: 3px;
 }
 
-.about span{
+.about span,
+.card a p{
     cursor: pointer;
     transition: color .5s;
 }
 
-.about span:hover{
+.about span:hover,
+.card a p:hover{
     color: #ED8A4B;
+}
+
+/* Contact Section */
+
+.contact{
+    height: 20vh;
+    max-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    display: inline-block;
+    /* width: 7rem; */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cta-btn{
+    display: table;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: 2.5px solid;
+    border-color: #ED8A4B;
+    padding: 1.3rem 2.4rem;
+    color: #fff;
+    margin: auto;
+    transition: border-color 0.5s;
+}
+
+.cta-btn:hover,
+.cta-btn:focus{
+    border-color: #fff;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-media-icons{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: #ED8A4B;
+    transition: color 0.5s;
+}
+
+.social-media-icons{
+    color: #fff;
 }
 
 /* Projects Section */
@@ -354,6 +411,12 @@ header{
 .card p{
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.card a{
+    color: #515151;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .title {
@@ -462,7 +525,7 @@ button:hover, a:hover {
     max-width: 100%;
   }
 }
-
+/* *************************************** Desktop *********************************************************************** */
 
 @media screen and (min-width: 900px){
 
@@ -598,7 +661,7 @@ button:hover, a:hover {
     /* About Sectiom */
 
     .about{
-        height: 90vh;
+        height: 70vh;
     }
 
     .model-1{
@@ -780,4 +843,16 @@ button:hover, a:hover {
         width: 20vw;
         max-width: 20vw;
     }
+
+    /* Contact Section */
+    .say-hello-mobile{
+        display: none;
+    }
+
+    .say-hello-desktop{
+        display: block;
+        width: 65vw;
+        margin: auto;
+    }
+
 }
