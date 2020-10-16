@@ -172,6 +172,23 @@ header{
     text-align: left;
 }
 
+.hello{
+    padding-bottom: 0;
+    height: 93vh;
+    max-height: 93vh;
+}
+
+.hello-desktop{
+    display: none;
+}
+
+.hello-mobile{
+    display: block;
+    width: 93vw;
+    max-width: 93vw;
+    margin-top: auto;
+}
+
 .hero .headline{
     display: none;
     color: #fff;
@@ -290,6 +307,23 @@ header{
 
 /* Projects Section */
 
+.projects{
+    padding-bottom: 0;
+    height: 93vh;
+    max-height: 93vh;
+}
+
+.projects-desktop{
+    display: none;
+}
+
+.projects-mobile{
+    display: block;
+    width: 93vw;
+    max-width: 93vw;
+    margin-top: auto;
+}
+
 .projects .sub-headline{
     font-size: 9rem;
     transform: rotate(-90deg);
@@ -349,6 +383,86 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
+
+/* Pen Paper */
+
+.pen-paper{
+    padding-bottom: 0;
+    height: 93vh;
+    max-height: 93vh;
+}
+
+.pen-paper-desktop{
+    display: none;
+}
+
+.pen-paper-mobile{
+    width: 95vw;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.pen-paper .sub-headline{
+    font-size: 8rem;
+}
+
+.pen-paper .headline{
+    font-size: 5rem;
+}
+
+/* Poem */
+
+.poem{
+    font-family: 'Kalam', cursive;
+}
+
+.poem-img{
+    margin-bottom: 2rem;
+}
+
+.poem p{
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Sketches */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 15%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 31%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 45%;
+    max-width: 100%;
+  }
+}
+
 
 @media screen and (min-width: 900px){
 
@@ -416,6 +530,15 @@ button:hover, a:hover {
     }
 
     /* Hero */
+    .hello-desktop{
+        display: block;
+        width: 60vw;
+        margin: auto;
+    }
+
+    .hello-mobile{
+        display: none;
+    }
 
     .hero .headline{
         display: block;
@@ -518,6 +641,15 @@ button:hover, a:hover {
     }
 
     /* Project Section */
+    .projects-desktop{
+        display: block;
+        width: 65vw;
+        margin: auto;
+    }
+
+    .projects-mobile{
+        display: none;
+    }
 
     .projects .sub-headline{
         transform: rotate(0deg);
@@ -591,5 +723,61 @@ button:hover, a:hover {
 
     button:hover, a:hover {
       opacity: 0.7;
+    }
+
+    /* Pen Paper */
+    .pen-paper-mobile{
+        display: none;
+    }
+
+    .pen-paper-desktop{
+        display: block;
+        width: 65vw;
+        margin: auto;
+    }
+
+    .pen-paper .sub-headline{
+        font-size: 11rem;
+        top: 6rem;
+        left: 3rem;
+    }
+
+    .pen-paper .headline{
+        font-size: 4.5rem;
+        font-weight: 500;
+        left: 25rem;
+    }
+
+    /* Poem */
+
+    .poem{
+        height: 90vh;
+        max-height: 90vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .poem .container{
+        display: flex;
+        width: 90%;
+        max-width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .poem-img{
+        margin-bottom: 2rem;
+         width: 20vw;
+         height: 16vw;
+         transform: rotate(-90deg);
+    }
+
+    .poem p{
+        font-size: 2rem;
+        font-weight: 400;
+        width: 20vw;
+        max-width: 20vw;
     }
 }
